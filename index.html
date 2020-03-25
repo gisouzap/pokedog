@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Amatic+SC|Gochi+Hand|Indie+Flower|Pacifico|Reenie+Beanie|Sen&display=swap"
+    rel="stylesheet">
+  <title>PokeDog</title>
+</head>
+
+<body>
+
+  <header>
+    <img class="logo" src="https://fontmeme.com/permalink/200324/5c28969296a96a470ec3a205fabe1c10.png" />
+    <p class="subtitle">escolha seu melhor amigo!</p>
+    <select class="dropdown" onchange="onChangeHandler()"> </select>
+    <span class="pokedogs"> <a href="./src/pokedogs.html">seus pokedogs</a></span>
+  </header>
+
+  <section class="img-section">
+    <div class="container"></div>
+  </section>
+
+  <div class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-container">
+        <div class="left">
+          <div class="mostraNome">
+            <label class="dog-name"></label>
+          </div>
+          <img class="modal-img" src="" />
+        </div>
+        <div class="right">
+          <p>Esse ainda não foi escolhido! É a sua chance! Jogue uma pokebola! :)</p>
+          <label>Nome: </label>
+          <input type="text" class="input-name" required placeholder="nome do pokedog" />
+          <label>Cor da fonte:</label>
+          <select class="color-dropdown"></select>
+          </select>
+          <label>Tipo da fonte: </label>
+          <select class="font-dropdown">
+          </select>
+          <img src="./src/pokeball.png" class="saveData" />
+        </div>
+      </div>
+      <div id="toast">Pokebola jogada com sucesso!</div>
+    </div>
+  </div>
+
+</body>
+<script src="js/app.js"></script>
+</html>
